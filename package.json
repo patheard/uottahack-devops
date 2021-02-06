@@ -1,0 +1,27 @@
+{
+  "name": "uottahack-devops",
+  "version": "1.0.0",
+  "description": "demos!",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patheard/uottahack-devops.git"
+  },
+  "author": "Pat Heard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patheard/uottahack-devops/issues"
+  },
+  "homepage": "https://github.com/patheard/uottahack-devops#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}
