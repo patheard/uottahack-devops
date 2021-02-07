@@ -10,18 +10,20 @@ GitHub Actions pipeline to build :hammer_and_pick: test :alembic: and deploy :ro
 * [Node.js](https://nodejs.org/en/download/)
 * [Docker](https://www.docker.com/get-started)
 * [VS Code](https://code.visualstudio.com/download)
-* Linux shell (recommended).  [WSL2 on Windows](https://docs.microsoft.com/en-us/windows/wsl/install-win10) works great.
+* Linux shell.  Git Bash or [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10) work.
 
 # Deploy
 1. Create [Heroku account](https://signup.heroku.com/).
-1. Grab your API key from the [accounts page](https://dashboard.heroku.com/account).
 1. [Create a new app](https://dashboard.heroku.com/new-app).
+1. Grab your API key from the [accounts page](https://dashboard.heroku.com/account).
+
+If you want to try the pipeline in your own repo, you'll need to create a `HEROKU_API_KEY` [secret in you repo](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).  If you [fork this repo and then submit a pull request back](https://guides.github.com/activities/forking/), my `HEROKU_API_KEY` secret won't be shared by your PR's pipeline.  This is done to protect my repo's secrets.
 
 # Setup Gitpod
-If you go the Gitpod route, open your workspace like so:
+If you go the Gitpod route, open your workspace like so:  
 https://gitpod.io#github.com/patheard/uottahack-devops
 
-Gitpod will ask you to authorize it accessing your GitHub account (read-only).  If you want to push code from Gitpod back to the repo (write access), you have a few options:
+Gitpod will ask you to authorize its access to your GitHub account (read-only).  If you want to push code from Gitpod back to the repo (write access), you have a few options:
 
 1. :sweat_smile: **Easy, more trusting**: give Gitpod [access to write to your repos](https://gitpod.io/access-control/).
 1. :raised_eyebrow:	**Harder, more cynical**: generate a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and update the [git remote URL](https://stackoverflow.com/a/18936804/152963).  This may be  worse for security though since it's possible that your token will be clear text in the workspace pod logs.  Be curious if anyone has strong opinions about this.
@@ -57,7 +59,7 @@ docker exec uottahack-devops ls -la
 docker exec uottahack-devops pwd
 ```
 
-# Check if it's running
+# Check it's running
 ```sh
 # This works if you've used either `npm start` or the `docker run` command
 # You can also use a browser, but it feels less fancy than the terminal, and 
