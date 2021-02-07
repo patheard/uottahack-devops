@@ -1,5 +1,5 @@
 # uOttaHack 4 DevOps
-GitHub Actions pipeline to build :hammer_and_pick: test :alembic: and deploy :rocket: a Dockerized Node.js app to [Heroku](https://dashboard.heroku.com/) 
+GitHub Actions pipeline to build :hammer_and_pick: test :alembic: and deploy :rocket: a Dockerized Node.js app to [Heroku](https://dashboard.heroku.com/).
 
 # Tools you'll need
 * [Gitpod.io account](https://gitpod.io/)
