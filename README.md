@@ -1,5 +1,5 @@
 # uOttaHack 4 DevOps
-GitHub Actions pipeline to build, test and deploy a Dockerized Node.js app to [Heroku](https://dashboard.heroku.com/) :rocket:
+GitHub Actions pipeline to build :hammer_and_pick:, test :alembic: and deploy :rocket: a Dockerized Node.js app to [Heroku](https://dashboard.heroku.com/) 
 
 # Tools you'll need
 * [Gitpod.io account](https://gitpod.io/)
@@ -21,6 +21,9 @@ GitHub Actions pipeline to build, test and deploy a Dockerized Node.js app to [H
 # Start the app
 PORT=3000 npm start
 
+# See if it's working
+curl http://localhost:3000
+
 # Run the tests
 npm test
 ```
@@ -32,3 +35,8 @@ docker build -t your-image-name:tag-name .
 # Run the image
 docker run -e PORT=3000 -p 3000:3000 -d your-image-name:tag-name
 ```
+
+# Credits
+The guides I took code from.  Realistically, 50% of my dev knowledge is hosted offsite.
+* [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+* [How to test Express.js with Jest and Supertest](https://www.albertgao.xyz/2017/05/24/how-to-test-expressjs-with-jest-and-supertest/)
