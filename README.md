@@ -67,6 +67,9 @@ docker exec uottahack-devops pwd
 curl http://localhost:3000
 ```
 
+# Session video
+:vhs: [Watch the recorded session](https://www.youtube.com/watch?t=302&v=tpTattd1TD4) from the conference.
+
 # Credits
 The guides I took code from.  Realistically, 50% of my dev knowledge is hosted offsite.
 * [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
