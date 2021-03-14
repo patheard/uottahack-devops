@@ -1,5 +1,10 @@
 # uOttaHack 4 DevOps
-GitHub Actions pipeline to build :hammer_and_pick: test :alembic: and deploy :rocket: a Dockerized Node.js app to [Heroku](https://dashboard.heroku.com/).
+Conference session to setup a GitHub Actions pipeline that builds :hammer_and_pick: tests :alembic: and deploys :rocket: a Dockerized Node.js app to [Heroku](https://dashboard.heroku.com/).
+
+Follow along with the video below or [grab the presentation](https://github.com/patheard/uottahack-devops/blob/main/presentation/uOttaHack-DevOps.pdf):
+
+[![Session video screenshot](https://github.com/patheard/uottahack-devops/blob/main/presentation/screenshot.png)](https://www.youtube.com/watch?t=302&v=tpTattd1TD4)
+
 
 # Tools you'll need
 * [Gitpod.io account](https://gitpod.io/)
@@ -66,9 +71,6 @@ docker exec uottahack-devops pwd
 # learning how to work with the command line is a big part of automation.
 curl http://localhost:3000
 ```
-
-# Session video
-:vhs: [Watch the recorded session](https://www.youtube.com/watch?t=302&v=tpTattd1TD4) from the conference.
 
 # Credits
 The guides I took code from.  Realistically, 50% of my dev knowledge is hosted offsite.
