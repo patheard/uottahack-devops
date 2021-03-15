@@ -1,7 +1,7 @@
 # uOttaHack 4 DevOps
 Conference session to setup a GitHub Actions pipeline that builds :hammer_and_pick: tests :alembic: and deploys :rocket: a Dockerized Node.js app to [Heroku](https://dashboard.heroku.com/).
 
-Follow along with the video below or [grab the presentation](https://github.com/patheard/uottahack-devops/blob/main/presentation/uOttaHack-DevOps.pdf):
+Follow along with the [video](https://www.youtube.com/watch?t=302&v=tpTattd1TD4) or [grab the presentation](https://github.com/patheard/uottahack-devops/blob/main/presentation/uOttaHack-DevOps.pdf):
 
 [![Session video screenshot](https://github.com/patheard/uottahack-devops/blob/main/presentation/screenshot.png)](https://www.youtube.com/watch?t=302&v=tpTattd1TD4)
 
